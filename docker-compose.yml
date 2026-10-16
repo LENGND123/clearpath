@@ -1,0 +1,22 @@
+services:
+  falkordb:
+    image: falkordb/falkordb:latest
+    ports:
+      - "6379:6379"
+      - "3000:3000"
+    volumes:
+      - falkor_data:/var/lib/falkordb/data
+
+  clearpath:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      FALKORDB_HOST: falkordb
+      FALKORDB_PORT: "6379"
+      XAI_API_KEY: ${XAI_API_KEY:-}
+    depends_on:
+      - falkordb
+
+volumes:
+  falkor_data:

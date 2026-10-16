@@ -1,0 +1,16 @@
+{
+  "name": "Clearpath",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "forwardPorts": [8080, 3000, 6379],
+  "postCreateCommand": "pip install -r requirements.txt && docker compose up -d falkordb",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  }
+}

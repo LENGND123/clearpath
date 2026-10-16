@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clearpath — Harbor Pay</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <p class="eyebrow">Graph Hacks · FalkorDB</p>
+        <h1>Clearpath</h1>
+      </div>
+    </div>
+    <div class="ops">
+      <label>Operator <input id="user" value="aditya" autocomplete="off" spellcheck="false"></label>
+      <span class="session">Session <strong id="session"></strong></span>
+      <button type="button" id="new-session">New session</button>
+      <button type="button" id="reset" class="ghost">Reset demo data</button>
+      <span id="health">Checking FalkorDB…</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="desk">
+      <p class="lede">Harbor Pay is fictional. The agent answers only by walking the graph, then writes the decision back.</p>
+      <div class="presets" id="presets"></div>
+      <div class="log" id="log"></div>
+      <form id="form">
+        <label class="sr" for="question">Question</label>
+        <input id="question" placeholder="Ask something the graph can answer">
+        <button type="submit">Ask</button>
+      </form>
+    </section>
+    <section class="trace" id="trace">
+      <div class="empty">
+        <p class="eyebrow">Path</p>
+        <h2>Nothing asked yet</h2>
+        <p>Start with the ledger outage. Then store a standing order, open a new session, and ask again. Change the operator to <code>priya</code> to show her graph does not have that order.</p>
+      </div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
