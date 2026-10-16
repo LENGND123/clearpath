@@ -56,7 +56,7 @@ Tests need a reachable FalkorDB:
 pytest -q
 ```
 
-CI runs those tests against `falkordb/falkordb:latest`.
+`.github/workflows/test.yml` runs that suite on GitHub against `falkordb/falkordb:latest` once it is on the default branch.
 
 ## What the graph does
 
