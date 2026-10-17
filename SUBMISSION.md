@@ -12,9 +12,13 @@ Register and submit at https://www.wemakedevs.org/hackathons/falkordb before **1
 
 **Repository:** https://github.com/LENGND123/clearpath
 
-**Live app:** Run `docker compose up --build` and open http://localhost:8080. FalkorDB Browser is on http://localhost:3000. This machine has no Docker daemon, so there is no public URL yet. A live URL can replace this line if you deploy the Compose stack.
+**Live app:** https://nikon-age-quotations-arlington.trycloudflare.com
 
-**Demo video:** record the shot list below. The form wants a working demo, about the length of the two-minute script in the README.
+That address reaches the desk on this PC. It stays up while the computer is awake and the tunnel is running. Local fallback: `docker compose up --build`, then http://localhost:8080. FalkorDB Browser is http://localhost:3000.
+
+**Demo video:** https://github.com/LENGND123/clearpath/raw/refs/heads/main/demo/clearpath-demo.webm
+
+The file is also at `demo/clearpath-demo.webm`. It is about one minute, with captions, and follows the shot list below.
 
 **Short description:**
 
